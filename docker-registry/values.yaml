@@ -1,0 +1,10 @@
+ingress:
+  enabled: true
+  className: nginx
+  path: /
+  hosts:
+    - docker.local
+  tls:
+    - secretName: docker-tls
+      hosts:
+        - docker.local
