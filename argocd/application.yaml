@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kw-mvn
+  namespace: argocd
+spec:
+  destination:
+    namespace: deploy
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: dev
+    repoURL: http://gitea.gitea:3000/argo/kw-mvn-deploy
+    targetRevision: kust
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true

@@ -1,0 +1,12 @@
+mirrors:
+  docker.io:
+    endpoint:
+      - "https://docker.local"
+configs:
+  "docker.local":
+    auth:
+      username: admin # this is the registry username
+      password: 1 # this is the registry password
+    tls:
+      cert_file: /etc/pki/ca-trust/source/anchors/docker.crt
+      key_file: /etc/pki/ca-trust/source/anchors/docker.key

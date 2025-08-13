@@ -49,4 +49,3 @@ EOF
 
 # rke2 서버 재기동
 systemctl restart rke2-server
-```
