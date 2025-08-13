@@ -13,3 +13,8 @@ k create -f ./
 ```
 sa-kw-build.yml 에서 docker registry / gitea 인증 정보 확인 후 설정
 ```
+
+#### 3. PipelineRun으로 테스트
+```
+k create -f pr-kw-build.yml
+```
