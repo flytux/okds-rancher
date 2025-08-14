@@ -9,7 +9,7 @@ openssl req -x509 -newkey rsa:4096 -sha256 -days 3650 -nodes \
 
 #### 2. 인증서 Secret 생성
 ```
-kubectl create ns docekr-registry
+kubectl create ns docker-registry
 kubectl create secret tls docker-tls --key docker.key --cert docker.crt -n docker-registry
 ```
 
