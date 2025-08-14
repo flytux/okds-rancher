@@ -49,3 +49,14 @@ EOF
 
 # rke2 서버 재기동
 systemctl restart rke2-server
+```
+#### 5. nginx ingress 에 proxy body size 추가
+```
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: docker-regisry
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-body-size: "0"
+
+```
