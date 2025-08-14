@@ -25,7 +25,7 @@ update-ca-trust
 helm upgrade -i docker-registry -f values.yaml docker-registry-3.0.0.tgz --create-namespace -n docker-registry
 ```
 #### 5. ContainerD 설정에 사설 레지스트리 추가
-- Rke 방식
+- RKE2 방식
 ```
 
 cat << EOF >> /etc/hosts
