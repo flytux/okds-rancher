@@ -44,7 +44,7 @@ configs:
       password: vmsgX2!sm(Ts # 레지스트리 패스워드
     tls:
       cert_file: /etc/pki/ca-trust/source/anchors/docker.crt # Rocky Linux
-      key_file: /etc/pki/ca-trust/source/anchors/doker.key
+      key_file: /etc/pki/ca-trust/source/anchors/docker.key
 EOF
 
 # rke2 서버 재기동
